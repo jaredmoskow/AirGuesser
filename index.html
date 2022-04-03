@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Air Guesser</title>
+    <script src="processing.js"></script>
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+<body onload="onLoad();"  style="background-color:#28303a">
+    <font styLe="color:white"><h1 align="center"></h1>
+    <div> 
+      <h1 id="ns" style="position: absolute; visibility: hidden;" class="nss">Hi</h1>
+      <h1 id="hs" style="position: absolute; visibility: hidden;" class="hss">Hi</h1>
+      <img id="pic" src="//i.imgur.com/zuhFznd.gif"  width="auto" height="500"alt=""class="center"></div>
+      <br>
+    <div id="StartB" class="flex"><button onclick="start();" class="start">Start The Game</button></div>
+    <div class="flex"><button class="flex-item" onclick="back();" id="BackA"><img src="https://www.freeiconspng.com/uploads/arrow-right-icon--icon-search-engine-10.png" class="leftButton" alt="" style="transform: scaleX(-1)"></button>
+    <button class="flex-item" id="guess" onclick="guess();">  Guess! </button>
+    <button class="flex-item" onclick="next();"id="frontA"><img src="https://www.freeiconspng.com/uploads/arrow-right-icon--icon-search-engine-10.png" class="rightButton" alt=""></button></div>
+      <br>
+  <div id="guesses" class="flex"><label for="Country" class="flex-item">Country:</label>
+<select name="Country" id="Country" class="flex-item">
+  <option value="United States">United States</option>
+  <option value="France">France</option>
+  <option value="United Kingdom">United Kingdom</option>
+  <option value="Italy">Italy</option>
+  <option value="Germany">Germany</option>
+</select>
+      <label for="State" class="flex-item">State:</label>
+<select name="State" id="State" class="flex-item">
+  <option value="New York">New York</option>
+  <option value="Florida">Florida</option>
+  <option value="Pennsylvania">Pennsylvania</option>
+  <option value="California">Califonia</option>
+  <option value="Texas">Texas</option>
+  <option value="Washington">Washington</option>
+  <option value="Not A State">Not A State</option>
+</select>
+  <label for="City" class="flex-item" id="CityLabel">City:</label>
+<select name="City" id="City" class="flex-item">
+  <option value="Buffalo">Buffalo</option>
+  <option value="Miami">Miami</option>
+  <option value="Tusan">Tusan</option>
+  <option value="London">London</option>
+  <option value="Gettysburg">Gettysburg</option>
+  <option value="Paris">Paris</option>
+  <option value="San Diego">San Diego</option>
+  <option value="Austin">Austin</option>
+  <option value="Dallas">Dallas</option>
+  <option value="Houston">Houston</option>
+  <option value="Berlin">Berlin</option>
+  <option value="Washington D.C">Washington D.C</option>
+  <option value="Seattle">Seattle</option>
+</select></div>
+<div class="flex"><h2 id="pText" class="flex-item">Points: </h2><h2 id="points" class = "flex-item">0</h2> <h2 class="flex-item" id="life" >Lives:</h2> <img src="https://opengameart.org/sites/default/files/heart%20pixel%20art%20254x254.png" class="flex-item heart" id="hrt3"><img src="https://opengameart.org/sites/default/files/heart%20pixel%20art%20254x254.png" class="flex-item heart" id="hrt2"><img src="https://opengameart.org/sites/default/files/heart%20pixel%20art%20254x254.png" class="flex-item heart" id="hrt1"></div>
+<div class="flex"><button onclick="conti();" id="conti"><h1>Continue</h1></button></div>
+      <br>
+<div class="flex" ><h3><a href="" class="lightYellow" id="link" target="_blank">Click Here to View The Listing</a></h3></div>
+
+</body>
+</html>
